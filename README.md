@@ -1,2 +1,2 @@
 # Inspirito-task
-implemented main solutions
+ GH-pages : https://taraskendzor.github.io/Inspirito-task/

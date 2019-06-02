@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inspirito Test</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="/style/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="recursive-result col-md-6 ">
+                    <div class="wrapper">
+                        <label class="label">Enter number 1-9
+                            <br/>
+                            <input id="input-value" value="" type="text" placeholder="Enter id" required/>
+                        </label>
+                        <br/>
+                        <input id="input-button" type="submit" value="Result">
+                        <p id="function-result"></p>
+                    </div>
+                </div>
+                <div class="col-md-6 form">
+                    <form class="form-validation">
+                        <div class="form-item">
+                            <label for="form-name">Enter your username
+                                <br/>
+                                <input type="text" id="form-name" name="username" data-def="username" pattern="^[A-Z]{1}[a-z]{1,100}$" placeholder="username">
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label for="form-address">Enter your Address 1
+                                <br/>
+                                <input type="text" name="address" id="form-address" data-def="address" pattern="^[#.0-9a-zA-Z\s,-]{1,100}" placeholder="Address">
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label for="form-address-second">Enter your Address 2
+                                <br/>
+                                <input type="text" name="addressSecond" id="form-address-second" data-def="addressSecond" pattern="^[#.0-9a-zA-Z\s,-]{0,100}" placeholder="Address 2">
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label class="form-city">Enter your City
+                                <br/>
+                                <input type="text" name="city" id="form-city" data-def="city" pattern="^[A-Z]{1}[A-Za-z . ,'-]{1,50}$" placeholder="city">
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label for="form-zip">Enter your ZIP
+                                <br/>
+                                <input type="text" name="zip" id="form-zip" data-def="zip" pattern="^[0-9]{5}$" placeholder="zip">
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label for="form-select">State
+                                <br/>
+                                <select id="form-select" name="state" data-def="state">
+                                    <option value="">Choose an option</option>
+                                    <option value="option-1">Option 1</option>
+                                    <option value="option-2">Option 2</option>
+                                </select>
+                            </label>
+                        </div>
+                        <input class="input-submit" type="submit" value="Ok" data-def="ok">
+                        <input class="input-reset" type="reset" value="Cancel" data-def="reset">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

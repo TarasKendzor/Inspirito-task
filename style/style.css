@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+input {
+	border: 1px solid black;
+}
+input:hover,select:hover {
+    background-color: ghostwhite;
+    
+}
+input::placeholder {
+    color: black;
+}
+
+select {
+	border: 1px solid black;
+}
+
+main {
+	margin-top: 5%;
+}
+
+.recursive-result {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-submit,
+.input-reset,
+#input-button {
+	background-color: #EAEAEA;
+	border: none;
+}
+
+.input-submit:hover,
+.input-reset:hover,
+#input-button:hover {
+	background-color: #D8D8D8;
+}
+
+@media (max-width: 768px) {
+	.form {
+		margin-top: 5%;
+		text-align: center;
+	}
+}

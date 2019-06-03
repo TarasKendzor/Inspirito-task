@@ -30,7 +30,7 @@
           let inpButton = document.querySelector('#input-button');
           inpButton.addEventListener('click', () => {
               let result = findNode(inpValue.value, element);
-              if (inpValue.value >= 9 || isNaN(inpValue.value)) {
+              if (inpValue.value > 9 || isNaN(inpValue.value)) {
                   functionResult.innerHTML = 'Incorrect data.';
               } else {
                   functionResult.innerHTML = 'Object Value is: ' + result + ' .';

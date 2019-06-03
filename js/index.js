@@ -64,6 +64,10 @@
                       error: 'empty value'
                   });
               }
+              let resetBnt = document.querySelector('.input-reset');
+                  resetBnt.addEventListener('click', function(){
+                  allInputs[i].style.borderColor ='black';
+                 });
           }
           if (errors.length <= 0) {
               alert('Your form has been sent successfully!');
